@@ -3,116 +3,187 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Jeff Akkerman's Personal Site</title>
+  <title>Jeff Akkerman</title>
+  <link rel="stylesheet" href="css\styles.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+  </script>
+  <script class="skill-gif" type="text/javascript">
+    //The array which is going to hold the image information. Store the image info along with their correct path; I've omitted the path here as I've stored the images in the same folder where my web page resides.
+    var imageSkillArray = new Array();
+
+    imageSkillArray[0] = "images/Skill-Gifs/hockey boy balancing giphy.gif"; //You can replace these image file names with your own image names.
+    imageSkillArray[1] = "images/Skill-Gifs/woman dribbling giphy.gif";
+    imageSkillArray[2] = "images/Skill-Gifs/woman on bike giphy.gif";
+
+    function skillGif() {
+      var rand = Math.floor(Math.random() * 3); //Generating a random number between 0 and 2 here in your case you can replace 3 with 11 if you have 10 images
+      var imgPath = "<img src='" + imageSkillArray[rand] + "' alt='Mad Skills' border='0' align='absmiddle' />";
+      document.getElementById("skill-gif").innerHTML = imgPath;
+    }
+  </script>
+  <script class="approval-gif" type="text/javascript">
+    //The array which is going to hold the image information. Store the image info along with their correct path; I've omitted the path here as I've stored the images in the same folder where my web page resides.
+    var imageApprovalArray = new Array();
+
+    imageApprovalArray[0] = "images/Approval Gifs/Howie Mandell Point giphy.gif"; //You can replace these image file names with your own image names.
+    imageApprovalArray[1] = "images/Approval Gifs/Morgan Freeman Clapping giphy.gif";
+    imageApprovalArray[2] = "images/Approval Gifs/Simon Cowell Thumbs Up giphy.gif";
+
+    function approvalGif() {
+      var rand = Math.floor(Math.random() * 3); //Generating a random number between 0 and 2 here in your case you can replace 3 with 11 if you have 10 images
+
+      var imgPath = "<img src='" + imageApprovalArray[rand] + "' alt='Extreme Approval' border='0' align='absmiddle' />";
+
+      document.getElementById("approval-gif").innerHTML = imgPath;
+
+    }
+  </script>
 </head>
 
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="Mcerman Family Fall 2022.jpg" alt="Family Portrait" width="540" height="360"></td>
-      <td>
-        <h1>Jeff Akkerman</h1>
-        <p><em><a href="https://www.udemy.com/course/100-days-of-code/">Python Pupil</a></em></p>
-        <p>I am currently learning programming with an emphasis on Python in order
-          to change careers. After completing my BS in Mathematics I taught math for
-          10 years. Then tried a career in sales and learned that is not for me. Ever
-          since taking Intro to Java in College I've been interested in programming
-          and have taken online courses. I'm now committed to mastering Python and my
-          next job will be as a programmer.</p>
-      </td>
-    </tr>
-  </table>
+  <div class="top-container">
+    <img class="sun" src="images/sun.png" alt="sun-img">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+    <h1 class="blue-header">I'm Jeff Akkerman.</h1>
+    <h2 class="blue-header">A <span class="pro">pro</span>grammer.</h2>
+    <img class="birds" src="images/flock-of-birds.png" alt="Flock of Birds">
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
 
-  <hr>
+    <!--
+    <img src="images/mountain.png" alt="mountain-img"><br />
+    <img class="hills-and-trees" src="https://cdn-icons-png.flaticon.com/512/3095/3095127.png" alt="Hills and Trees"><br>
+    <a class="attribute" href="https://www.flaticon.com/free-icons/landscape" title="landscape icons">Landscape icons created by Freepik - Flaticon</a><br>
+-->
+    <div class="image-attribute">
+      <img id="header-image" class="mountains-trees-river" src="images/mountain2.png" alt="Mountains-Trees-River"><br>
+      <a class="attribute" href="https://www.flaticon.com/authors/freepik" title="Sun, Cloud, Birds, Landscape, Chess, and Rubik's Cube Icons">Sun, Cloud, Birds, Landscape, Chess, and Rubik's Cube Icons created by Freepik - Flaticon</a>
+    </div>
+  </div>
 
-  <h3>Education</h3>
+  <div class="middle-container">
+    <div class="profile">
+      <img id="profile-photo" src="images\Mcerman Family Fall 2022.jpg" alt="Mcerman Family Fall Photo"><br />
+      <h2 class="hello">Hello.</h2><br />
+      <p>After completing my BS in Mathematics I taught math for 10 years.<br>
+        <!--Ever since taking Intro to Java in College I've been interested in programming and have tinkered around with online courses.-->
+        I'm now committed to mastering Python and my next job will be as a programmer.
+      </p><br />
+    </div>
+    <hr>
 
-  <ul>
-    <li>California Lutheran University</li>
-    <li><a href="https://www.udemy.com/course/100-days-of-code/">Udemy</a></li>
-  </ul>
+    <div class="skills">
+      <h2>My Skills:</h2>
+      <div class="skill-row">
+        <div id="skill-gif"></div>
+        <script type="text/javascript">
+          skillGif();
+        </script>
+        <!--<img class="skills-gif" src="images/Skill-Gifs/hockey boy balancing giphy.gif" alt="boy on balance board practicing hockey.">
+        <img class="skills-gif" src="images/Skill-Gifs/woman dribbling giphy.gif" alt="Woman dribbling 5 basketballs while on balance board.">
+        <img class="skills-gif" src="images/Skill-Gifs/woman on bike giphy.gif" alt="Woman riding bike while standing on seat then hopping to stand on the handle bars.">-->
+        <h3 id="well-actually">Well, actually...</h3>
+        <p class="text-align-left skills-text">I don't have any good skills like
+          <a href="https://youtu.be/XsiiIa6bs9I" target="_blank" rel="noopener noreferrer">nunchuck skills, bow hunting
+            skills, computer hacking skills,</a> and I can't play
+          <a href="https://youtu.be/_c_ufaxeSTs" target="_blank" rel="noopener noreferrer">jazz flute</a>.
+          But what I do have are a very <a href="https://youtu.be/jZOywn1qArI" target="_blank" rel="noopener noreferrer">particular set of skills</a>. Skills I have acquired over a very long career.
+        </p><br />
+        <table class="text-align-left" cellspacing="10">
+          <thead>
+            <tr>
+              <th>Professional</th>
+              <th>Personal</th>
+            </tr>
+          </thead>
 
-  <hr>
-
-  <h3>Work Experience</h3>
-
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2008-2018</td>
-        <td>Taught Math</td>
-      </tr>
-      <tr>
-        <td>2019-2022</td>
-        <td>Madwire</td>
-      </tr>
-      <tr>
-        <td>2023+</td>
-        <td>Python Programmer</td>
-      </tr>
-    </tbody>
-    <tfoot>
-    </tfoot>
-  </table>
-
-  <hr>
-
-  <h3>Skills</h3>
-
-  <table cellspacing="10">
-    <tr>
-      <td>
-        <table>
           <tr>
-            <td>Mathematics</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>HTML(5)</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>⭐⭐</td>
+            <td>
+              <table>
+                <tr>
+                  <td>Mathematics</td>
+                  <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                  <td>Python</td>
+                  <td>⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                  <td>HTML(5)</td>
+                  <td>⭐⭐⭐</td>
+                </tr>
+                <tr>
+                  <td>CSS</td>
+                  <td>⭐⭐⭐</td>
+                </tr>
+                <tr>
+                  <td>JavaScript</td>
+                  <td>⭐⭐⭐</td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td>Sudoku</td>
+                  <td>⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                  <td>Chess</td>
+                  <td>⭐⭐⭐</td>
+                </tr>
+                <tr>
+                  <td>Rubik's Cube</td>
+                  <td>⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                  <td>Cleaning</td>
+                  <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                  <td>Cooking</td>
+                  <td>⭐</td>
+                </tr>
+              </table>
+            </td>
           </tr>
         </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>Cleaning</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Cooking</td>
-            <td>⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Chess</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Rubik's Cube</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+      </div>
 
-  <hr>
-  <p><a href="hobbies.html">My Hobbies</a></p>
-  <p><a href="contact.html">Contact Me</a></p>
+      <div class="skill-row">
+        <div id="approval-gif"></div>
+        <script type="text/javascript">
+          approvalGif();
+        </script>
+        <h4>Chess Club</h4>
+        <img class="chess" src="images/chess.png" alt="Two People Playing Chess">
+        <p class="text-align-left">I created a chess club at every school I taught at - as a way to connect with students. During lunch at Lyons Middle Senior High School my classroom ended up with dozens of students learning and playing chess.</p>
+        <h4 class="rubik-header">Rubik's Cube</h4>
+        <img class="rubiks" src="images/rubik.png" alt="Rubik's Cube">
+        <p class="text-align-left">Having always been intrigued by the Rubik's Cube it was serendipitous that one year several of my students were very into Rubik's Cube and taught me the algorithm. I have gone on to teach many of my students and others this algorithm.</p>
+      </div>
+    </div>
+    <div class="bottom-hr">
+      <hr>
+    </div>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you love logic games and puzzles.</h3>
+      <p class="contact">Do you love logic games as much as i do?<br />Let's talk about our favorites!<br />Maybe we can turn one into a coding project!</p><br />
+      <a class="btn" href="mailto:akkerman.jeff@gmail.com">CONTACT ME</a>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/">Twitter</a>
+    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+    <p class="copyright">© 2022 Jeff Akkerman.</p>
+  </div>
+
 </body>
 
 </html>
