@@ -10,10 +10,6 @@ body {
   color: #40514E;
 }
 
-div {
-  /*padding: 20px;*/
-}
-
 h1 {
   margin: 50px auto 0 auto;
   font-size: 5.625rem;
@@ -22,12 +18,13 @@ h1 {
 }
 
 h2 {
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
   font-family: 'Montserrat', sans-serif;
   font-size: 3.47625rem;
   color: #425F57;
   font-weight: normal;
   padding-bottom: 10px;
+  width: 700px;
 }
 
 h3 {
