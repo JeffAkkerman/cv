@@ -52,10 +52,10 @@ hr {
   margin: 60px auto;
 }
 
-img {
-  width: 40%;
-  /*margin-left: 30%;*/
-}
+/* img {
+  width: 100%;
+  margin-sides: 30%;
+} */
 
 table {
   margin: 0 auto;
@@ -95,11 +95,15 @@ td {
 }
 
 .birds {
-  width: 3%;
+  /* width: 5%; */
+  width: 30px;
   position: absolute;
   /* right: 43%; */
-  left: 57%;
-  top: 450px;
+  left: 60%;
+  /* top: 450px; */
+  bottom: 400px;
+  /* bottom: 45%; */
+  /* top: 50%; */
 }
 
 .blue-header {
@@ -110,10 +114,11 @@ td {
   /*padding-top: 10px;*/
   height: 80px;
   width: 150px;
-  position: absolute;
-  left: 30%;
-  top: 400px;
-  /* bottom: 30%; */
+  /* position: absolute; */
+  position: relative;
+  /* left: 0%; */
+  /* top: 400px; */
+  /* bottom: 20%; */
 }
 
 .bottom-container {
@@ -170,16 +175,8 @@ td {
   color: #95D6A4;
 }
 
-.image-attribute {
-  text-align: center;
-}
-
 .middle-container {
   background-color: #95D6A4;
-}
-
-.mountains-trees-river {
-  margin-bottom: 0;
 }
 
 .profile {
@@ -223,10 +220,6 @@ td {
 }
 
 /***** ID SELECTORS = ONLY 1 INSTANCE ON PAGE & ONLY 1 ID PER ELEMENT ********/
-
-#header-image{
-  margin-left: 0;
-}
 
 #profile-photo {
   width: 540px;
