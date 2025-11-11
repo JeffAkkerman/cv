@@ -222,7 +222,8 @@ td {
 /***** ID SELECTORS = ONLY 1 INSTANCE ON PAGE & ONLY 1 ID PER ELEMENT ********/
 
 #profile-photo {
-  width: 540px;
-  height: 360px;
+  width: 448px;
+  height: 672px;
 }
+
 
